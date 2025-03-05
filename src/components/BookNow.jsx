@@ -68,8 +68,7 @@ const Heading = styled.div`
 `;
 const InputWrapper = styled.div`
   position: relative;
-  margin-bottom: 30px; /* Increased spacing to prevent overlap */
-
+  margin-bottom: 30px; 
   svg {
     position: absolute;
     top: 50%;
@@ -100,8 +99,8 @@ const InputWrapper = styled.div`
 
   span {
     position: absolute;
-    bottom: -18px; /* Moves error message below input */
-    left: 40px; /* Aligns with input text */
+    bottom: -18px; 
+    left: 40px; 
     color: red;
     font-size: 12px;
   }
