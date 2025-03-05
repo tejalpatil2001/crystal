@@ -13,9 +13,6 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 480px) {
-    padding: 30px 15px;
-  }
 `;
 
 const Title = styled.h2`
@@ -29,9 +26,6 @@ const Title = styled.h2`
   @media (max-width: 768px) {
     font-size: 24px;
   }
-  @media (max-width: 480px) {
-    font-size: 19px;
-  }
 `;
 
 const Subtitle = styled.p`
@@ -40,9 +34,6 @@ const Subtitle = styled.p`
   text-align: center;
   max-width: 600px;
   margin-bottom: 40px;
-  @media (max-width: 480px) {
-    font-size: 12px;
-  }
 `;
 
 const Container = styled.div`
@@ -52,35 +43,15 @@ const Container = styled.div`
   gap: 10px;
   padding: 20px;
   width: 80%;
-
-  @media (max-width: 480px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    width: 100%;
-    gap: 10px;
-
-  }
-  
 `;
 
 const Box1 = styled.div`
   grid-row: span 2;
-
   background-color: #ffadad; /* Light Red */
   background-image: url(${img1});
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
-
-  @media (max-width: 768px) {
-    grid-row: span 1;
-    height: 180px;
-  }
-  @media (max-width: 480px) {
-    height: 150px;
-
-  }
+  border-radius: 30px 0px 0px 30px;
 `;
 
 const Box2 = styled.div`
@@ -88,11 +59,6 @@ const Box2 = styled.div`
   background-image: url(${img2});
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
-
-  @media (max-width: 480px) {
-    height: 150px;
-  }
 `;
 
 const Box3 = styled.div`
@@ -100,11 +66,7 @@ const Box3 = styled.div`
   background-image: url(${img3});
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
-
-  @media (max-width: 480px) {
-    height: 150px;
-  }
+  border-radius: 0px 30px 0px 0px;
 `;
 
 const Box4 = styled.div`
@@ -112,11 +74,6 @@ const Box4 = styled.div`
   background-image: url(${img4});
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
-
-  @media (max-width: 480px) {
-    height: 150px;
-  }
 `;
 
 const Box5 = styled.div`
@@ -124,12 +81,7 @@ const Box5 = styled.div`
   background-image: url(${img5});
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
-
-  @media (max-width: 480px) {
-    height: 150px;
-    grid-column: span 2; /* Full width */
-  }
+  border-radius: 0px 0px 30px 0px;
 `;
 
 const BeautySection = () => {

@@ -7,7 +7,7 @@ import { IoSearch } from "react-icons/io5";
 const Container = styled.div`
   height: 640px;
   width: 100%;
-  background-color: blue;
+  background-color: transparent;
   display: flex;
   @media (max-width: 768px) {
     height: 400px;
@@ -63,7 +63,7 @@ const Content = styled.div`
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   @media (max-width: 768px) {
     max-width: 500px;
   }
@@ -99,8 +99,7 @@ const Heading = styled.h1`
   }
   @media (max-width: 480px) {
     font-size: 20px;
-  margin-bottom: 10px;
-
+    margin-bottom: 10px;
   }
 `;
 
@@ -113,8 +112,7 @@ const Description = styled.p`
   }
   @media (max-width: 480px) {
     font-size: 8px;
-  width:70%;
-
+    width: 70%;
   }
 `;
 
@@ -130,8 +128,7 @@ const SearchBar = styled.div`
   @media (max-width: 768px) {
     width: 450px;
     padding: 8px;
-  padding-left: 20px;
-
+    padding-left: 20px;
   }
   @media (max-width: 480px) {
     display: none;
@@ -193,7 +190,9 @@ const HeroSection = () => {
             Find a service <br /> close to you
           </Heading>
           <Description>
-          Looking for the perfect place to relax, refresh, and rejuvenate? Explore the best salons and wellness centers near you and book your service now!
+            Looking for the perfect place to relax, refresh, and rejuvenate?
+            Explore the best salons and wellness centers near you and book your
+            service now!
           </Description>
           <SearchBar>
             <Input placeholder="Book your services..." />
